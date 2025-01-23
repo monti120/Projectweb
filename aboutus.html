@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MK Computers</title>
+	<link rel="stylesheet" href="aboutus.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="mainpage.html" class="logo">MK Computer</a>
+			<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="mainpage.html">НАЧАЛО</a></li>
+					<li><a href="aboutus.html">ЗА НАС</a></li>
+					<li><a href="products.html">ПРОДУКТИ</a></li>
+					<li><a href="">ПРОМОЦИИ</a></li>
+					<li><a href="contacts.html">КОНТАКТИ</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>За Нас</h1>
+	</section>
+	<section class="otnosno">
+		<h2>Каква е нашата мисия</h2>
+			<h4>Мисията е да създадем една изгодна и сигурна за пазаруване среда,
+			състояща се от нови и употребявани електронни устройства,
+			в допълнение на които имате на разположение пакетни услуги,
+			осигуряващи безпроблемното им функциониране. 
+			Веригата от сервизни центрове пък гарантира коректната работоспособност на 
+			закупената любима джаджа още дълги години.
+
+			Достъпните цени, продължителният тест период, 
+			доставка, гъвкавите схеми за изплащане и възможност за застраховка на покупката, 
+			прави пазаруването при нас безопасно и изгодно, така че заповядайте!</h4>
+	</section>
+				
+	<section class="otnosno2">
+		<h2>Защо да ни се доверите?</h2>
+			<h4>Защо да ни се доверите?
+			Защото избирайки нас, вие имате голям избор от мобилни електронни устройства, 
+			разделени в две основни подкатегории, а именно нови и втора употреба. 
+			Така със сигурност получавате достъпни, прилежащи на бюджета ви, предложения. 
+			А изгодните изброени по-горе условия и 
+			наличие на цяла верига от допълнително обслужващи покупката ви спомагателни дейности, 
+			гарантират дълготрайност и стотици часове забавление с любимата придобивка, така че доверете ни се!</h4>
+	</section>
+	<section class="contact">
+		<ul>
+			<li><a href="">Контакти</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="">Общи условия</a></li>
+			<li><a href="">Работно време</a></li>
+		</ul>
+ 		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<h6>All rights reserved</h6>
+		
+	</section>
+	
+	<!----JavaScript za menu----->
+	<script>
+	
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+			}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+
+	
+
+</body>
+</html>

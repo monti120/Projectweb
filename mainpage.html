@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+
+  <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MK Computers</title>
+	<link rel="stylesheet" href="mainpage-style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="mainpage.html" class="logo">MK Computer</a>
+			<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="mainpage.html">НАЧАЛО</a></li>
+					<li><a href="aboutus.html">ЗА НАС</a></li>
+					<li><a href="products.html">ПРОДУКТИ</a></li>
+					<li><a href="">ПРОМОЦИИ</a></li>
+					<li><a href="contacts.html">КОНТАКТИ</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	<div class="text-box">
+		<h1> Голяма гама от компютърна периферия </h1>
+		<p> Ние ще се погрижим за вашата машина!</p>
+		<a class="hero-btn">Посетете ни!</а>
+	</div>
+	
+	</section>
+	
+	<!-- nachalo -->
+	<section class="home">
+		<h1>Какво предлагаме?</h1>
+		<p>Открийте иновации в технологиите, 
+		които подобряват вашето ежедневие – от офиса до дома и гейминга!</p>
+ 		
+		<div class="row">
+			<div class="options">
+				<h3>Софтуер</h3>
+				<p>Предлагаме едни от най-добрите 
+				софтуери на супер изгодните цени</p>
+			</div>
+			<div class="options">
+				<h3>Хардуер</h3>
+				<p>Можете да намерите качествени 
+				части за вашата машина </p>
+			</div>
+			<div class="options">
+				<h3>Периферия</h3>
+				<p>Външни устройства и аксесоари 
+				както за офиса, така и за дома </p>
+			</div>
+		</div>
+		
+	</section>
+	
+	<!--Контакти-->
+	<section class="contact">
+		<ul>
+			<li><a href="">Контакти</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="">Общи условия</a></li>
+			<li><a href="">Работно време</a></li>
+		</ul>
+ 		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		<h6>All rights reserved</h6>
+		
+	</section>
+	
+	
+	
+	<!--JavaScript za menu-->
+	<script>
+	
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+			}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+
+</body>
+</html>

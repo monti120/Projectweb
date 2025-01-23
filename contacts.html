@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MK Computers</title>
+	<link rel="stylesheet" href="contacts-style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="header">
+		<nav>
+			<a href="mainpage.html" class="logo">MK Computer</a>
+			<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="mainpage.html">НАЧАЛО</a></li>
+					<li><a href="aboutus.html">ЗА НАС</a></li>
+					<li><a href="products.html">ПРОДУКТИ</a></li>
+					<li><a href="">ПРОМОЦИИ</a></li>
+					<li><a href="contacts.html">КОНТАКТИ</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+	</section>
+	
+<div class="container">
+ <div class="login-container">
+        <h2>Влезте в акаунта си!</h2>
+        <form action="/login" method="POST">
+            <div class="form-group">
+                <label for="username">Имейл/Потребителско име</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Парола</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="form-footer">
+                <p>Нямате акаунт? <a href="/register">Регистрирайте се тук!</a></p>
+            </div>
+        </form>
+    </div>
+<div class="question-container">
+        <h2>Имате въпрос?</h2>
+        <form action="/submit-question" method="POST">
+            <div class="form-group">
+                <label for="name">Вашето име</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Вашият Имейл</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="category">Категория</label>
+                <select id="category" name="category" required>
+                    <option value="">Избери категория</option>
+                    <option value="general">Общо</option>
+                    <option value="technical">Технически</option>
+                    <option value="billing">Таксуване</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="question">Вашият въпрос</label>
+                <textarea id="question" name="question" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Изпрати запитване</button>
+        </form>
+    </div>
+	<div class ="working-hours">
+		<h2>Работно време</h2>
+			<ul>
+				<li>Пн-Пт: 09ч-19ч</li>
+				<li>Събота: 09ч-13:00ч</li>
+				<li>Неделя: Почивен ден</li>
+				<li>Тел.: 089222222</li>
+				<li>Имейл: mkcomputer@gmail.com</li>
+			</ul>
+		
+	</div>
+</div>
+	
+	
+	
+	
+	
+	
+	<section class="contact">
+		<ul>
+			<li><a href="">Контакти</a></li>
+			<li><a href="">Доставка</a></li>
+			<li><a href="">Общи условия</a></li>
+			<li><a href="">Работно време</a></li>
+		</ul>
+ 		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		
+	</section>
+	
+	<!----JavaScript za menu----->
+	<script>
+	
+		var navLinks = document.getElementById("navLinks");
+		function showMenu(){
+			navLinks.style.right = "0";
+			}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+
+	
+
+</body>
+</html>
