@@ -110,8 +110,7 @@ navLinks .fa{
 		color: #fff;
 		margin: 10px;
 		font-size: 22px;
-		cursor: pointer;
-		overflow: hidden; 
+		cursor: pointer; 
 	}
 	.nav-links ul{
 		padding: 30px;
@@ -131,7 +130,7 @@ navLinks .fa{
 
 /*----- logo -----*/
 .logo {
-	font-size: 2rem;
+	font-size: 1.5rem;
 	min-height: 10px;
 	text-decoration: none;
 	color: white;
