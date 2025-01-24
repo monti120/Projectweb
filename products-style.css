@@ -1,3 +1,10 @@
+html, body {
+max-width: 100% !important;
+overflow-x: hidden !important;
+}
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -135,6 +142,19 @@ nav .fa{
 	background: purple;
 	color: white;
 }
+
+
+@media (max-width: 320px){
+	.header{
+		min-height: 10vh;
+	}
+	.logo{
+		font-size: 1.5rem;
+	}
+}
+
+
+
 /*----начало---*/
 
 .home {
