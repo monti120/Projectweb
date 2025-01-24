@@ -1,3 +1,11 @@
+html, body {
+max-width: 100% !important;
+overflow-x: hidden !important;
+}
+
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -169,6 +177,15 @@ nav .fa{
 	}
 }
 
+@media (max-width: 320px){
+	.header{
+		min-height: 10vh;
+	}
+	.logo{
+		font-size: 1.5rem;
+	}
+}
+
 
 .contact{
 	text-align: center;
@@ -198,6 +215,9 @@ nav .fa{
 .container{
 		display: flex;
 		gap: 20px;
+		width: 50%
+		max-width: 90em;
+		margin: 20px;
 }
 
 
@@ -210,7 +230,7 @@ nav .fa{
             padding: 20px 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
+            width: 60%;
             max-width: 400px;
 			margin-left: 50px;
 			margin-top: 30px;
@@ -264,13 +284,18 @@ nav .fa{
             text-decoration: underline;
         }
 
+
+
+
+
+
 /*--Запитване--*/
 .question-container {
             background: #fff;
             padding: 20px 30px;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            width: 100%;
+            width: 60%;
             max-width: 400px;
 			margin-left: 30px;
 			margin-top: 30px;
@@ -319,7 +344,7 @@ nav .fa{
 
 .working-hours{
 			height: 22vh;
-			width: 100%;
+			width: 60%;
 			max-width: 18em;
 			box-shadow: 0 7px 7px rgba(0, 0, 0, 0.3);
 			background: #d856fc;
